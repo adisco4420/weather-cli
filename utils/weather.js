@@ -7,7 +7,7 @@ module.exports = async (location, day) => {
     if (day === 'today') {
         url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country_code}&APPID=4360776cb4bc583cf137a178860aae0c`;
     } if (day === 'tomorrow') {
-        url = `https://api.openweathermap.org/data/2.5/forecast?q=${city},${country_code}&APPID=4360776cb4bc583cf137a178860aae0c`
+        url = `http://api.openweathermap.org/data/2.5/forecast/daily?q=${city},${country_code}&mode=json&cnt=3&units=metric&appid=c9d49310f8023ee2617a7634de23c2aa`
     } else {
         url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country_code}&APPID=4360776cb4bc583cf137a178860aae0c`;
     }
